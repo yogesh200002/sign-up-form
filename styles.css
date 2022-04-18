@@ -92,7 +92,16 @@ img{
 }
 
 input{
-    width: fit-content;
+    width: 20rem;
+    border-radius: 4px;
+    height: 30px;
+}
+
+input:focus{
+    outline: none;
+    border-color: rgb(60, 200, 255) !important;;
+    border: 3px;
+    border-style: solid;
 }
 
 .form{
