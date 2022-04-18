@@ -1,0 +1,121 @@
+body{
+    display: flex;
+    margin: 0%;
+    background-color: black;
+    color: antiquewhite;
+    gap: 10%;
+    overflow: hidden;
+}
+
+.image{
+    height: 100vh;
+    width: 35%;
+    min-width: 35%;
+    min-height: auto;
+    max-height: 100%;
+    position: relative;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.imgHeader>svg{
+    fill: white;
+    width: 15%;
+    height: 15%;
+}
+
+.imgHeader>div{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.imgHeader{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    background-color: #0000004d;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgFooter{
+    position: absolute;
+    bottom: 14px;
+    color: #ffffff;
+    display: flex;
+    left: 20%;
+    font-weight: bolder;
+}
+
+.imgFooter>a{
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.imgFooter>a:hover{
+    color: greenyellow;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headPara{
+    text-align: justify;
+    margin-bottom: 10px;
+    width: 50%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.headForm{
+    margin-bottom: 10px;
+}
+
+.labelRow{
+    display: flex;
+    gap: 10%;
+}
+
+.labelContainer{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: fit-content;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 5px 0px;
+}
+
+a{
+    color: darkorchid;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button{
+    margin: 10px 0px;
+    width: fit-content;
+}
+
+a:hover{
+    color:red;
+}
