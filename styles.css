@@ -91,17 +91,48 @@ img{
     flex-direction: column;
 }
 
-input{
-    width: 20rem;
-    border-radius: 4px;
-    height: 30px;
+label{
+    position: absolute;
+    color: black;
+    transition: ease all 0.3s;
+    padding: 2px;
+}
+
+input:not(:placeholder-shown)~label,input:focus:not(:placeholder-shown)~label,input:focus-within~label{
+    transform: translateY(-25px);
+    color: white;
+    transition: ease all 0.3s;
 }
 
 input:focus{
     outline: none;
-    border-color: rgb(60, 200, 255) !important;;
-    border: 3px;
-    border-style: solid;
+    border: 3px solid skyblue;
+    transition: border-color ease-in 0.3s;
+}
+
+input:invalid:focus:not(:placeholder-shown),input:invalid:not(:focus):not(:placeholder-shown){
+    outline: none;
+    border: 3px solid red;
+}
+
+input:valid:focus:not(:placeholder-shown),input:valid:not(:focus):not(:placeholder-shown){
+    outline: none;
+    border: 3px solid green;
+}
+
+input{
+    width: 20rem;
+    border-radius: 4px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+input::placeholder{
+    visibility: hidden;
+}
+
+input:focus::placeholder{
+    visibility: visible;
 }
 
 .form{
