@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up to our site</title>
+    <title>Sign up to our Club</title>
 </head>
 <body>
     <div class="image">
@@ -28,32 +28,32 @@
         <form class="form" method="get" action="#">
             <div class="labelRow">
                 <div class="labelContainer">
-                    <label for="firstName">First Name</label>
-                    <input id="firstName" name="firstName" type="text" minlength="20" placeholder="Ex: Jack" required>
+                    <input id="firstName" name="firstName" type="text" minlength="3" maxlength="20" placeholder="Ex: Jack" required>
+                    <label for="firstName">First Name*</label>
                 </div>
                 <div class="labelContainer">
+                    <input id="lastName" name="lastName" type="text" minlength='1' maxlength="20" placeholder="Ex: Cooper">
                     <label for="lastName">Last Name</label>
-                    <input id="lastName" name="lastName" type="text" minlength="20" placeholder="Ex: Cooper">
                 </div>
             </div>
             <div class="labelRow">
                 <div class="labelContainer">
-                    <label for="email">Email ID</label>
-                    <input type="email" name="email" id="email" placeholder="Ex: you@example.com">
+                    <input type="email" name="email" id="email" placeholder="Ex: you@example.com" required>
+                    <label for="email">Email ID*</label>
                 </div>
                 <div class="labelContainer">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber" min="10" max="12" placeholder="9123456789" required>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" minlength="10" maxlength="12" placeholder="9123456789" required>
+                    <label for="phoneNumber">Phone Number*</label>
                 </div>
             </div>
             <div class="labelRow">
                 <div class="labelContainer">
+                    <input type="password" name="password" id="password" placeholder="**********" minlength="8" required>
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" minlength="8" required>
                 </div>
                 <div class="labelContainer">
+                    <input type="password" name="cPassword" id="cPassword" placeholder="**********" minlength="8" required>
                     <label for="cPassword">Confirm Password</label>
-                    <input type="password" name="cPassword" id="cPassword" minlength="8" required>
                 </div>
             </div>
             <button type="submit">Create a Account</button>
