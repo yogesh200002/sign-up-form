@@ -48,12 +48,13 @@
             </div>
             <div class="labelRow">
                 <div class="labelContainer">
-                    <input type="password" name="password" id="password" placeholder="**********" minlength="8" required>
-                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}" placeholder="Min. length is 8" 
+                    title="Please enter a password that has minimum length of 8 character including a minimum of 1 Uppercase, Number and a special Character" minlength="8" required>
+                    <label for="password">Password*</label>
                 </div>
                 <div class="labelContainer">
-                    <input type="password" name="cPassword" id="cPassword" placeholder="**********" minlength="8" required>
-                    <label for="cPassword">Confirm Password</label>
+                    <input type="password" name="cPassword" id="cPassword" pattern="" placeholder="********" minlength="8" required>
+                    <label for="cPassword">Confirm Password*</label>
                 </div>
             </div>
             <button type="submit">Create a Account</button>
