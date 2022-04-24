@@ -42,7 +42,7 @@
                     <label for="email">Email ID*</label>
                 </div>
                 <div class="labelContainer">
-                    <input type="tel" name="phoneNumber" id="phoneNumber" minlength="10" maxlength="12" placeholder="9123456789" required>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" minlength="8" maxlength="15" placeholder="9123456789 or +(Country Code)1234567890" required>
                     <label for="phoneNumber">Phone Number*</label>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                     <label for="password">Password*</label>
                 </div>
                 <div class="labelContainer">
-                    <input type="password" name="cPassword" id="cPassword" pattern="" placeholder="********" minlength="8" required>
+                    <input type="password" name="cPassword" id="cPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}" placeholder="********" minlength="8" required>
                     <label for="cPassword">Confirm Password*</label>
                 </div>
             </div>
